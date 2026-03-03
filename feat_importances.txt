@@ -1,0 +1,1203 @@
+==============================
+THRESHOLD = 0.5
+==============================
+
+=== Walk-Forward CV (1999–2014) ===
+
+logreg (avg over folds)
+precision: 0.005618
+recall:    0.787338
+f1:        0.01114
+confusion_matrix:
+ [[16986 14239]
+ [   21    81]]
+folds_used: 9
+
+rf (avg over folds)
+precision: 0.0
+recall:    0.0
+f1:        0.0
+confusion_matrix:
+ [[31225     0]
+ [  102     0]]
+folds_used: 9
+
+gb (avg over folds)
+precision: 0.0
+recall:    0.0
+f1:        0.0
+confusion_matrix:
+ [[31130    95]
+ [  102     0]]
+folds_used: 9
+
+xgb (avg over folds)
+precision: 0.014747
+recall:    0.227934
+f1:        0.027429
+confusion_matrix:
+ [[29786  1439]
+ [   80    22]]
+folds_used: 9
+
+=== Final Holdout (Train: 1999–2014, Test: 2015–2018) ===
+
+logreg (holdout)
+precision: 0.00066
+recall:    0.8
+f1:        0.001318
+confusion_matrix:
+ [[5935 6060]
+ [   1    4]]
+
+
+Top 10 feature importance (|coef|) for logreg:
+current_assets               3.570607
+total_assets                 2.152247
+current_liabilities          1.749298
+ebit                         1.180228
+inventory                    0.845041
+depreciation_amortization    0.778780
+total_receivables            0.707840
+long_term_debt               0.661755
+ebitda                       0.640418
+market_cap                   0.550273
+dtype: float64
+
+rf (holdout)
+precision: 0.0
+recall:    0.0
+f1:        0.0
+confusion_matrix:
+ [[11995     0]
+ [    5     0]]
+
+
+Top 10 feature importance for rf:
+retained_earnings      0.076362
+market_cap             0.059125
+asset_turnover         0.054501
+debt_to_asset_ratio    0.047795
+quick_ratio            0.045622
+gross_profit_margin    0.045038
+gross_profit           0.041073
+current_assets         0.039120
+total_receivables      0.038545
+current_ratio          0.037838
+dtype: float64
+
+gb (holdout)
+precision: 0.0
+recall:    0.0
+f1:        0.0
+confusion_matrix:
+ [[11965    30]
+ [    5     0]]
+
+
+Top 10 feature importance for gb:
+retained_earnings      0.192212
+asset_turnover         0.156071
+market_cap             0.144234
+gross_profit_margin    0.069436
+quick_ratio            0.057506
+long_term_debt         0.038027
+total_receivables      0.028664
+current_liabilities    0.028117
+current_assets         0.027402
+ebitda                 0.027266
+dtype: float64
+
+xgb (holdout)
+precision: 0.0
+recall:    0.0
+f1:        0.0
+confusion_matrix:
+ [[11341   654]
+ [    5     0]]
+
+
+Top 10 feature importance for xgb:
+retained_earnings      0.051723
+asset_turnover         0.050483
+quick_ratio            0.044229
+long_term_debt         0.044141
+gross_profit           0.042194
+gross_profit_margin    0.040894
+debt_to_asset_ratio    0.039896
+ros                    0.039811
+current_assets         0.038936
+current_liabilities    0.038798
+dtype: float32
+
+
+
+==============================
+THRESHOLD = 0.3
+==============================
+
+=== Walk-Forward CV (1999–2014) ===
+
+logreg (avg over folds)
+precision: 0.003513
+recall:    1.0
+f1:        0.006997
+confusion_matrix:
+ [[ 2850 28375]
+ [    0   102]]
+folds_used: 9
+
+rf (avg over folds)
+precision: 0.0
+recall:    0.0
+f1:        0.0
+confusion_matrix:
+ [[31225     0]
+ [  102     0]]
+folds_used: 9
+
+gb (avg over folds)
+precision: 0.0
+recall:    0.0
+f1:        0.0
+confusion_matrix:
+ [[31120   105]
+ [  102     0]]
+folds_used: 9
+
+xgb (avg over folds)
+precision: 0.010044
+recall:    0.503247
+f1:        0.019644
+confusion_matrix:
+ [[26643  4582]
+ [   56    46]]
+folds_used: 9
+
+=== Final Holdout (Train: 1999–2014, Test: 2015–2018) ===
+
+logreg (holdout)
+precision: 0.000472
+recall:    1.0
+f1:        0.000943
+confusion_matrix:
+ [[ 1406 10589]
+ [    0     5]]
+
+
+Top 10 feature importance (|coef|) for logreg:
+current_assets               3.570607
+total_assets                 2.152247
+current_liabilities          1.749298
+ebit                         1.180228
+inventory                    0.845041
+depreciation_amortization    0.778780
+total_receivables            0.707840
+long_term_debt               0.661755
+ebitda                       0.640418
+market_cap                   0.550273
+dtype: float64
+
+rf (holdout)
+precision: 0.0
+recall:    0.0
+f1:        0.0
+confusion_matrix:
+ [[11995     0]
+ [    5     0]]
+
+
+Top 10 feature importance for rf:
+retained_earnings      0.076362
+market_cap             0.059125
+asset_turnover         0.054501
+debt_to_asset_ratio    0.047795
+quick_ratio            0.045622
+gross_profit_margin    0.045038
+gross_profit           0.041073
+current_assets         0.039120
+total_receivables      0.038545
+current_ratio          0.037838
+dtype: float64
+
+gb (holdout)
+precision: 0.0
+recall:    0.0
+f1:        0.0
+confusion_matrix:
+ [[11961    34]
+ [    5     0]]
+
+
+Top 10 feature importance for gb:
+retained_earnings      0.192212
+asset_turnover         0.156071
+market_cap             0.144234
+gross_profit_margin    0.069436
+quick_ratio            0.057506
+long_term_debt         0.038027
+total_receivables      0.028664
+current_liabilities    0.028117
+current_assets         0.027402
+ebitda                 0.027266
+dtype: float64
+
+xgb (holdout)
+precision: 0.0
+recall:    0.0
+f1:        0.0
+confusion_matrix:
+ [[10130  1865]
+ [    5     0]]
+
+
+Top 10 feature importance for xgb:
+retained_earnings      0.051723
+asset_turnover         0.050483
+quick_ratio            0.044229
+long_term_debt         0.044141
+gross_profit           0.042194
+gross_profit_margin    0.040894
+debt_to_asset_ratio    0.039896
+ros                    0.039811
+current_assets         0.038936
+current_liabilities    0.038798
+dtype: float32
+
+
+
+==============================
+THRESHOLD = 0.1
+==============================
+
+=== Walk-Forward CV (1999–2014) ===
+
+logreg (avg over folds)
+precision: 0.003341
+recall:    1.0
+f1:        0.006656
+confusion_matrix:
+ [[ 1302 29923]
+ [    0   102]]
+folds_used: 9
+
+rf (avg over folds)
+precision: 0.009757
+recall:    0.021164
+f1:        0.013162
+confusion_matrix:
+ [[31102   123]
+ [  100     2]]
+folds_used: 9
+
+gb (avg over folds)
+precision: 0.008547
+recall:    0.015873
+f1:        0.011111
+confusion_matrix:
+ [[31062   163]
+ [  101     1]]
+folds_used: 9
+
+xgb (avg over folds)
+precision: 0.005323
+recall:    0.743867
+f1:        0.010558
+confusion_matrix:
+ [[17733 13492]
+ [   29    73]]
+folds_used: 9
+
+=== Final Holdout (Train: 1999–2014, Test: 2015–2018) ===
+
+logreg (holdout)
+precision: 0.00044
+recall:    1.0
+f1:        0.00088
+confusion_matrix:
+ [[  641 11354]
+ [    0     5]]
+
+
+Top 10 feature importance (|coef|) for logreg:
+current_assets               3.570607
+total_assets                 2.152247
+current_liabilities          1.749298
+ebit                         1.180228
+inventory                    0.845041
+depreciation_amortization    0.778780
+total_receivables            0.707840
+long_term_debt               0.661755
+ebitda                       0.640418
+market_cap                   0.550273
+dtype: float64
+
+rf (holdout)
+precision: 0.0
+recall:    0.0
+f1:        0.0
+confusion_matrix:
+ [[11966    29]
+ [    5     0]]
+
+
+Top 10 feature importance for rf:
+retained_earnings      0.076362
+market_cap             0.059125
+asset_turnover         0.054501
+debt_to_asset_ratio    0.047795
+quick_ratio            0.045622
+gross_profit_margin    0.045038
+gross_profit           0.041073
+current_assets         0.039120
+total_receivables      0.038545
+current_ratio          0.037838
+dtype: float64
+
+gb (holdout)
+precision: 0.0
+recall:    0.0
+f1:        0.0
+confusion_matrix:
+ [[11951    44]
+ [    5     0]]
+
+
+Top 10 feature importance for gb:
+retained_earnings      0.192212
+asset_turnover         0.156071
+market_cap             0.144234
+gross_profit_margin    0.069436
+quick_ratio            0.057506
+long_term_debt         0.038027
+total_receivables      0.028664
+current_liabilities    0.028117
+current_assets         0.027402
+ebitda                 0.027266
+dtype: float64
+
+xgb (holdout)
+precision: 0.000621
+recall:    0.6
+f1:        0.001241
+confusion_matrix:
+ [[7168 4827]
+ [   2    3]]
+
+
+Top 10 feature importance for xgb:
+retained_earnings      0.051723
+asset_turnover         0.050483
+quick_ratio            0.044229
+long_term_debt         0.044141
+gross_profit           0.042194
+gross_profit_margin    0.040894
+debt_to_asset_ratio    0.039896
+ros                    0.039811
+current_assets         0.038936
+current_liabilities    0.038798
+dtype: float32
+
+
+
+==============================
+THRESHOLD = 0.05
+==============================
+
+=== Walk-Forward CV (1999–2014) ===
+
+logreg (avg over folds)
+precision: 0.003311
+recall:    1.0
+f1:        0.006596
+confusion_matrix:
+ [[ 1010 30215]
+ [    0   102]]
+folds_used: 9
+
+rf (avg over folds)
+precision: 0.017625
+recall:    0.170154
+f1:        0.031502
+confusion_matrix:
+ [[30267   958]
+ [   86    16]]
+folds_used: 9
+
+gb (avg over folds)
+precision: 0.008108
+recall:    0.035053
+f1:        0.012884
+confusion_matrix:
+ [[30906   319]
+ [   99     3]]
+folds_used: 9
+
+xgb (avg over folds)
+precision: 0.004414
+recall:    0.853656
+f1:        0.008775
+confusion_matrix:
+ [[12353 18872]
+ [   17    85]]
+folds_used: 9
+
+=== Final Holdout (Train: 1999–2014, Test: 2015–2018) ===
+
+logreg (holdout)
+precision: 0.000434
+recall:    1.0
+f1:        0.000869
+confusion_matrix:
+ [[  492 11503]
+ [    0     5]]
+
+
+Top 10 feature importance (|coef|) for logreg:
+current_assets               3.570607
+total_assets                 2.152247
+current_liabilities          1.749298
+ebit                         1.180228
+inventory                    0.845041
+depreciation_amortization    0.778780
+total_receivables            0.707840
+long_term_debt               0.661755
+ebitda                       0.640418
+market_cap                   0.550273
+dtype: float64
+
+rf (holdout)
+precision: 0.0
+recall:    0.0
+f1:        0.0
+confusion_matrix:
+ [[11768   227]
+ [    5     0]]
+
+
+Top 10 feature importance for rf:
+retained_earnings      0.076362
+market_cap             0.059125
+asset_turnover         0.054501
+debt_to_asset_ratio    0.047795
+quick_ratio            0.045622
+gross_profit_margin    0.045038
+gross_profit           0.041073
+current_assets         0.039120
+total_receivables      0.038545
+current_ratio          0.037838
+dtype: float64
+
+gb (holdout)
+precision: 0.0
+recall:    0.0
+f1:        0.0
+confusion_matrix:
+ [[11923    72]
+ [    5     0]]
+
+
+Top 10 feature importance for gb:
+retained_earnings      0.192212
+asset_turnover         0.156071
+market_cap             0.144234
+gross_profit_margin    0.069436
+quick_ratio            0.057506
+long_term_debt         0.038027
+total_receivables      0.028664
+current_liabilities    0.028117
+current_assets         0.027402
+ebitda                 0.027266
+dtype: float64
+
+xgb (holdout)
+precision: 0.000584
+recall:    0.8
+f1:        0.001167
+confusion_matrix:
+ [[5149 6846]
+ [   1    4]]
+
+
+Top 10 feature importance for xgb:
+retained_earnings      0.051723
+asset_turnover         0.050483
+quick_ratio            0.044229
+long_term_debt         0.044141
+gross_profit           0.042194
+gross_profit_margin    0.040894
+debt_to_asset_ratio    0.039896
+ros                    0.039811
+current_assets         0.038936
+current_liabilities    0.038798
+dtype: float32
+
+
+
+==============================
+THRESHOLD = 0.02
+==============================
+
+=== Walk-Forward CV (1999–2014) ===
+
+logreg (avg over folds)
+precision: 0.003284
+recall:    1.0
+f1:        0.006543
+confusion_matrix:
+ [[  754 30471]
+ [    0   102]]
+folds_used: 9
+
+rf (avg over folds)
+precision: 0.009628
+recall:    0.498256
+f1:        0.018855
+confusion_matrix:
+ [[25910  5315]
+ [   48    54]]
+folds_used: 9
+
+gb (avg over folds)
+precision: 0.01364
+recall:    0.29305
+f1:        0.025973
+confusion_matrix:
+ [[28954  2271]
+ [   69    33]]
+folds_used: 9
+
+xgb (avg over folds)
+precision: 0.003701
+recall:    0.930375
+f1:        0.007368
+confusion_matrix:
+ [[ 6565 24660]
+ [    9    93]]
+folds_used: 9
+
+=== Final Holdout (Train: 1999–2014, Test: 2015–2018) ===
+
+logreg (holdout)
+precision: 0.00043
+recall:    1.0
+f1:        0.00086
+confusion_matrix:
+ [[  376 11619]
+ [    0     5]]
+
+
+Top 10 feature importance (|coef|) for logreg:
+current_assets               3.570607
+total_assets                 2.152247
+current_liabilities          1.749298
+ebit                         1.180228
+inventory                    0.845041
+depreciation_amortization    0.778780
+total_receivables            0.707840
+long_term_debt               0.661755
+ebitda                       0.640418
+market_cap                   0.550273
+dtype: float64
+
+rf (holdout)
+precision: 0.0
+recall:    0.0
+f1:        0.0
+confusion_matrix:
+ [[10542  1453]
+ [    5     0]]
+
+
+Top 10 feature importance for rf:
+retained_earnings      0.076362
+market_cap             0.059125
+asset_turnover         0.054501
+debt_to_asset_ratio    0.047795
+quick_ratio            0.045622
+gross_profit_margin    0.045038
+gross_profit           0.041073
+current_assets         0.039120
+total_receivables      0.038545
+current_ratio          0.037838
+dtype: float64
+
+gb (holdout)
+precision: 0.0
+recall:    0.0
+f1:        0.0
+confusion_matrix:
+ [[11477   518]
+ [    5     0]]
+
+
+Top 10 feature importance for gb:
+retained_earnings      0.192212
+asset_turnover         0.156071
+market_cap             0.144234
+gross_profit_margin    0.069436
+quick_ratio            0.057506
+long_term_debt         0.038027
+total_receivables      0.028664
+current_liabilities    0.028117
+current_assets         0.027402
+ebitda                 0.027266
+dtype: float64
+
+xgb (holdout)
+precision: 0.000441
+recall:    0.8
+f1:        0.000881
+confusion_matrix:
+ [[2922 9073]
+ [   1    4]]
+
+
+Top 10 feature importance for xgb:
+retained_earnings      0.051723
+asset_turnover         0.050483
+quick_ratio            0.044229
+long_term_debt         0.044141
+gross_profit           0.042194
+gross_profit_margin    0.040894
+debt_to_asset_ratio    0.039896
+ros                    0.039811
+current_assets         0.038936
+current_liabilities    0.038798
+dtype: float32
+
+
+
+==============================
+THRESHOLD = 0.01
+==============================
+
+=== Walk-Forward CV (1999–2014) ===
+
+logreg (avg over folds)
+precision: 0.00327
+recall:    1.0
+f1:        0.006515
+confusion_matrix:
+ [[  617 30608]
+ [    0   102]]
+folds_used: 9
+
+rf (avg over folds)
+precision: 0.006366
+recall:    0.747174
+f1:        0.012613
+confusion_matrix:
+ [[19503 11722]
+ [   25    77]]
+folds_used: 9
+
+gb (avg over folds)
+precision: 0.007912
+recall:    0.761544
+f1:        0.015648
+confusion_matrix:
+ [[21310  9915]
+ [   21    81]]
+folds_used: 9
+
+xgb (avg over folds)
+precision: 0.003447
+recall:    0.956349
+f1:        0.006866
+confusion_matrix:
+ [[ 3618 27607]
+ [    5    97]]
+folds_used: 9
+
+=== Final Holdout (Train: 1999–2014, Test: 2015–2018) ===
+
+logreg (holdout)
+precision: 0.000428
+recall:    1.0
+f1:        0.000856
+confusion_matrix:
+ [[  320 11675]
+ [    0     5]]
+
+
+Top 10 feature importance (|coef|) for logreg:
+current_assets               3.570607
+total_assets                 2.152247
+current_liabilities          1.749298
+ebit                         1.180228
+inventory                    0.845041
+depreciation_amortization    0.778780
+total_receivables            0.707840
+long_term_debt               0.661755
+ebitda                       0.640418
+market_cap                   0.550273
+dtype: float64
+
+rf (holdout)
+precision: 0.000557
+recall:    0.4
+f1:        0.001113
+confusion_matrix:
+ [[8407 3588]
+ [   3    2]]
+
+
+Top 10 feature importance for rf:
+retained_earnings      0.076362
+market_cap             0.059125
+asset_turnover         0.054501
+debt_to_asset_ratio    0.047795
+quick_ratio            0.045622
+gross_profit_margin    0.045038
+gross_profit           0.041073
+current_assets         0.039120
+total_receivables      0.038545
+current_ratio          0.037838
+dtype: float64
+
+gb (holdout)
+precision: 0.0
+recall:    0.0
+f1:        0.0
+confusion_matrix:
+ [[9795 2200]
+ [   5    0]]
+
+
+Top 10 feature importance for gb:
+retained_earnings      0.192212
+asset_turnover         0.156071
+market_cap             0.144234
+gross_profit_margin    0.069436
+quick_ratio            0.057506
+long_term_debt         0.038027
+total_receivables      0.028664
+current_liabilities    0.028117
+current_assets         0.027402
+ebitda                 0.027266
+dtype: float64
+
+xgb (holdout)
+precision: 0.000484
+recall:    1.0
+f1:        0.000969
+confusion_matrix:
+ [[ 1680 10315]
+ [    0     5]]
+
+
+Top 10 feature importance for xgb:
+retained_earnings      0.051723
+asset_turnover         0.050483
+quick_ratio            0.044229
+long_term_debt         0.044141
+gross_profit           0.042194
+gross_profit_margin    0.040894
+debt_to_asset_ratio    0.039896
+ros                    0.039811
+current_assets         0.038936
+current_liabilities    0.038798
+dtype: float32
+
+
+
+==============================
+THRESHOLD = 0.005
+==============================
+
+=== Walk-Forward CV (1999–2014) ===
+
+logreg (avg over folds)
+precision: 0.00326
+recall:    1.0
+f1:        0.006496
+confusion_matrix:
+ [[  518 30707]
+ [    0   102]]
+folds_used: 9
+
+rf (avg over folds)
+precision: 0.00472
+recall:    0.890873
+f1:        0.009385
+confusion_matrix:
+ [[12452 18773]
+ [   11    91]]
+folds_used: 9
+
+gb (avg over folds)
+precision: 0.004104
+recall:    0.900794
+f1:        0.008167
+confusion_matrix:
+ [[ 9284 21941]
+ [    8    94]]
+folds_used: 9
+
+xgb (avg over folds)
+precision: 0.003291
+recall:    0.975529
+f1:        0.006556
+confusion_matrix:
+ [[ 1702 29523]
+ [    3    99]]
+folds_used: 9
+
+=== Final Holdout (Train: 1999–2014, Test: 2015–2018) ===
+
+logreg (holdout)
+precision: 0.000427
+recall:    1.0
+f1:        0.000853
+confusion_matrix:
+ [[  277 11718]
+ [    0     5]]
+
+
+Top 10 feature importance (|coef|) for logreg:
+current_assets               3.570607
+total_assets                 2.152247
+current_liabilities          1.749298
+ebit                         1.180228
+inventory                    0.845041
+depreciation_amortization    0.778780
+total_receivables            0.707840
+long_term_debt               0.661755
+ebitda                       0.640418
+market_cap                   0.550273
+dtype: float64
+
+rf (holdout)
+precision: 0.000647
+recall:    0.8
+f1:        0.001292
+confusion_matrix:
+ [[5814 6181]
+ [   1    4]]
+
+
+Top 10 feature importance for rf:
+retained_earnings      0.076362
+market_cap             0.059125
+asset_turnover         0.054501
+debt_to_asset_ratio    0.047795
+quick_ratio            0.045622
+gross_profit_margin    0.045038
+gross_profit           0.041073
+current_assets         0.039120
+total_receivables      0.038545
+current_ratio          0.037838
+dtype: float64
+
+gb (holdout)
+precision: 0.000659
+recall:    0.8
+f1:        0.001318
+confusion_matrix:
+ [[5933 6062]
+ [   1    4]]
+
+
+Top 10 feature importance for gb:
+retained_earnings      0.192212
+asset_turnover         0.156071
+market_cap             0.144234
+gross_profit_margin    0.069436
+quick_ratio            0.057506
+long_term_debt         0.038027
+total_receivables      0.028664
+current_liabilities    0.028117
+current_assets         0.027402
+ebitda                 0.027266
+dtype: float64
+
+xgb (holdout)
+precision: 0.000449
+recall:    1.0
+f1:        0.000898
+confusion_matrix:
+ [[  865 11130]
+ [    0     5]]
+
+
+Top 10 feature importance for xgb:
+retained_earnings      0.051723
+asset_turnover         0.050483
+quick_ratio            0.044229
+long_term_debt         0.044141
+gross_profit           0.042194
+gross_profit_margin    0.040894
+debt_to_asset_ratio    0.039896
+ros                    0.039811
+current_assets         0.038936
+current_liabilities    0.038798
+dtype: float32
+
+
+
+==============================
+THRESHOLD = 0.002
+==============================
+
+=== Walk-Forward CV (1999–2014) ===
+
+logreg (avg over folds)
+precision: 0.003251
+recall:    1.0
+f1:        0.006477
+confusion_matrix:
+ [[  420 30805]
+ [    0   102]]
+folds_used: 9
+
+rf (avg over folds)
+precision: 0.003795
+recall:    0.919312
+f1:        0.007555
+confusion_matrix:
+ [[ 7113 24112]
+ [    8    94]]
+folds_used: 9
+
+gb (avg over folds)
+precision: 0.003238
+recall:    0.994709
+f1:        0.00645
+confusion_matrix:
+ [[  683 30542]
+ [    1   101]]
+folds_used: 9
+
+xgb (avg over folds)
+precision: 0.003261
+recall:    1.0
+f1:        0.006496
+confusion_matrix:
+ [[  499 30726]
+ [    0   102]]
+folds_used: 9
+
+=== Final Holdout (Train: 1999–2014, Test: 2015–2018) ===
+
+logreg (holdout)
+precision: 0.000425
+recall:    1.0
+f1:        0.00085
+confusion_matrix:
+ [[  234 11761]
+ [    0     5]]
+
+
+Top 10 feature importance (|coef|) for logreg:
+current_assets               3.570607
+total_assets                 2.152247
+current_liabilities          1.749298
+ebit                         1.180228
+inventory                    0.845041
+depreciation_amortization    0.778780
+total_receivables            0.707840
+long_term_debt               0.661755
+ebitda                       0.640418
+market_cap                   0.550273
+dtype: float64
+
+rf (holdout)
+precision: 0.000596
+recall:    1.0
+f1:        0.00119
+confusion_matrix:
+ [[3604 8391]
+ [   0    5]]
+
+
+Top 10 feature importance for rf:
+retained_earnings      0.076362
+market_cap             0.059125
+asset_turnover         0.054501
+debt_to_asset_ratio    0.047795
+quick_ratio            0.045622
+gross_profit_margin    0.045038
+gross_profit           0.041073
+current_assets         0.039120
+total_receivables      0.038545
+current_ratio          0.037838
+dtype: float64
+
+gb (holdout)
+precision: 0.000442
+recall:    1.0
+f1:        0.000884
+confusion_matrix:
+ [[  696 11299]
+ [    0     5]]
+
+
+Top 10 feature importance for gb:
+retained_earnings      0.192212
+asset_turnover         0.156071
+market_cap             0.144234
+gross_profit_margin    0.069436
+quick_ratio            0.057506
+long_term_debt         0.038027
+total_receivables      0.028664
+current_liabilities    0.028117
+current_assets         0.027402
+ebitda                 0.027266
+dtype: float64
+
+xgb (holdout)
+precision: 0.000427
+recall:    1.0
+f1:        0.000853
+confusion_matrix:
+ [[  284 11711]
+ [    0     5]]
+
+
+Top 10 feature importance for xgb:
+retained_earnings      0.051723
+asset_turnover         0.050483
+quick_ratio            0.044229
+long_term_debt         0.044141
+gross_profit           0.042194
+gross_profit_margin    0.040894
+debt_to_asset_ratio    0.039896
+ros                    0.039811
+current_assets         0.038936
+current_liabilities    0.038798
+dtype: float32
+
+
+
+==============================
+THRESHOLD = 0.001
+==============================
+
+=== Walk-Forward CV (1999–2014) ===
+
+logreg (avg over folds)
+precision: 0.003248
+recall:    1.0
+f1:        0.006471
+confusion_matrix:
+ [[  384 30841]
+ [    0   102]]
+folds_used: 9
+
+rf (avg over folds)
+precision: 0.003795
+recall:    0.919312
+f1:        0.007555
+confusion_matrix:
+ [[ 7113 24112]
+ [    8    94]]
+folds_used: 9
+
+gb (avg over folds)
+precision: 0.003212
+recall:    1.0
+f1:        0.0064
+confusion_matrix:
+ [[   17 31208]
+ [    0   102]]
+folds_used: 9
+
+xgb (avg over folds)
+precision: 0.003228
+recall:    1.0
+f1:        0.006431
+confusion_matrix:
+ [[  169 31056]
+ [    0   102]]
+folds_used: 9
+
+=== Final Holdout (Train: 1999–2014, Test: 2015–2018) ===
+
+logreg (holdout)
+precision: 0.000424
+recall:    1.0
+f1:        0.000848
+confusion_matrix:
+ [[  207 11788]
+ [    0     5]]
+
+
+Top 10 feature importance (|coef|) for logreg:
+current_assets               3.570607
+total_assets                 2.152247
+current_liabilities          1.749298
+ebit                         1.180228
+inventory                    0.845041
+depreciation_amortization    0.778780
+total_receivables            0.707840
+long_term_debt               0.661755
+ebitda                       0.640418
+market_cap                   0.550273
+dtype: float64
+
+rf (holdout)
+precision: 0.000596
+recall:    1.0
+f1:        0.00119
+confusion_matrix:
+ [[3604 8391]
+ [   0    5]]
+
+
+Top 10 feature importance for rf:
+retained_earnings      0.076362
+market_cap             0.059125
+asset_turnover         0.054501
+debt_to_asset_ratio    0.047795
+quick_ratio            0.045622
+gross_profit_margin    0.045038
+gross_profit           0.041073
+current_assets         0.039120
+total_receivables      0.038545
+current_ratio          0.037838
+dtype: float64
+
+gb (holdout)
+precision: 0.000418
+recall:    1.0
+f1:        0.000835
+confusion_matrix:
+ [[   35 11960]
+ [    0     5]]
+
+
+Top 10 feature importance for gb:
+retained_earnings      0.192212
+asset_turnover         0.156071
+market_cap             0.144234
+gross_profit_margin    0.069436
+quick_ratio            0.057506
+long_term_debt         0.038027
+total_receivables      0.028664
+current_liabilities    0.028117
+current_assets         0.027402
+ebitda                 0.027266
+dtype: float64
+
+xgb (holdout)
+precision: 0.000421
+recall:    1.0
+f1:        0.000841
+confusion_matrix:
+ [[  118 11877]
+ [    0     5]]
+
+
+Top 10 feature importance for xgb:
+retained_earnings      0.051723
+asset_turnover         0.050483
+quick_ratio            0.044229
+long_term_debt         0.044141
+gross_profit           0.042194
+gross_profit_margin    0.040894
+debt_to_asset_ratio    0.039896
+ros                    0.039811
+current_assets         0.038936
+current_liabilities    0.038798
+dtype: float32
